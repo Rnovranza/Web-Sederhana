@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: cambria;
+}
+a {
+  color: inherit;
+  text-decoration: 0;
+}
+.header {
+  padding: 5px 0px;
+  background-color: #393e46;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header h1 {
+  float: left;
+  padding: 15px 0;
+  color: #00adb5;
+}
+header ul {
+  float: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  padding: 25px 20px;
+  display: inline-block;
+}
+
+header ul li a:hover {
+  background-color: #00adb5;
+  color: white;
+}
+
+.active {
+  background-color: #00adb5;
+  color: white;
+}
+.background {
+  height: 60vh;
+  background-image: url("https://img.freepik.com/free-photo/top-view-person-writing-laptop-with-copy-space_23-2148708035.jpg?w=900&t=st=1674974153~exp=1674974753~hmac=26e9525bf4bdeeb2cd6abaf9658f2668ac0ab3c5ab729e21faa7fbc1f90c7d02");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 173, 181, 0.6);
+}
+.background h2 {
+  color: white;
+  z-index: 1;
+  padding: 20px 25px;
+  border: 3px solid;
+}
+section {
+  padding: 50px 0;
+}
+section h3 {
+  text-align: center;
+  padding: 20px 0;
+  color: #00adb5;
+  margin-bottom: 20px;
+}
+.about {
+  padding-bottom: 100px;
+}
+.about p {
+  color: black;
+  word-spacing: 2px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+footer {
+  padding: 30px 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.loading {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.ring {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  borderborder-top-color: #333;
+  border-left-color: #333;
+  border-right-color: #333;
+  border-bottom-color: #333;
+  animation: ring 1s linear infinite;
+  -webkit-animation: ring 1s linear infinite;
+}
+.label {
+  background-color: #00adb5;
+  color: white;
+}
+@keyframes ring {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.education {
+  padding-bottom: 100px;
+}
+.education ul li {
+  color: black;
+  word-spacing: 2px;
+  line-height: 25px;
+  margin-bottom: 0px;
+}
+.contact {
+  padding-bottom: 0;
+}
+
+.contact h4 {
+  color: #00adb5;
+  line-height: 50px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+.contact p {
+  color: #333;
+  line-height: 25px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  header h1 {
+    text-align: center;
+    float: none;
+  }
+  header ul {
+    text-align: center;
+    float: none;
+  }
+}
